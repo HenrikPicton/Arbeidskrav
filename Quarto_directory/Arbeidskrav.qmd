@@ -20,8 +20,9 @@ When you click the **Render** button a document will be generated that includes 
 
 library(tidyverse)
 
-getwd()
-#descriptives <- read.csv("Wingate_data.csv")
+descriptives <- read.csv("Wingate_data.csv")
+
+descriptives
 
 ```
 
