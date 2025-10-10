@@ -60,8 +60,10 @@ descriptives
 
 ```
 
-# Diskusjon
+# Diskusjon 4
 
-gard eheheheh her kan jeg skrive heheheh siuuu
+Hovedfunnene i denne studien er...
 
-gnh
+Metodiske betraktninger:
+
+Til tross for tilvenningstest før testperioden er trolig testpersonene det største usikkerhetsmomentet ved målinegene av Tacx-syklenes reliabilitet. Deres opplevelde dagsform varierte fra dag til dag, samt et større fall i prestasjon fra test 1 til 2 samme dag enn antatt på forhånd. Disse variasjonene kan ha vært med på å maskere den reelle reliabiliteten til Tacx-syklene. Til fremtidige studier anbefales bedre sykkeltrente deltagere som trolig vil ha mindre fysiologisk dag til dag variasjon. VALIDITET
