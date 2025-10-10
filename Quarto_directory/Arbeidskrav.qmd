@@ -3,19 +3,21 @@ title: "Arbeidskrav Statistikk"
 author: "Gard, Henrik og Sebastian"
 format: html
 editor: visual
+bibliography: references_arbeidskrav.bib
+csl: vancouver.csl
 ---
 
 # Introduksjon
 
-Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratorier brukes typisk Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke systematisk vurdert for bruk i fysiologiske tester.
+Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratorier brukes typisk Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
 
 -   Formål: Å vurdere reliabilitet for Tacx-syklene
 
 -   Problemstilling: "Er Tacx-syklene på ghetto gymmen reliable for 15-sekunders Wingate-tester?"
 
-# Resultater
-
 # Metode
+
+# Resultater
 
 ```{r}
 #| echo: false
@@ -30,11 +32,6 @@ descriptives
 
 ```
 
-You can add options to executable code like this
+# Diskusjon
 
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+gard eheheheh
