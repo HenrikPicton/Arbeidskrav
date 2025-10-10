@@ -5,13 +5,17 @@ format: html
 editor: visual
 ---
 
-## Quarto
+# Introduksjon
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratorier brukes typisk Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke systematisk vurdert for bruk i fysiologiske tester.
 
-## Running Code
+-   Formål: Å vurdere reliabilitet for Tacx-syklene
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+-   Problemstilling: "Er Tacx-syklene på ghetto gymmen reliable for 15-sekunders Wingate-tester?"
+
+# Resultater
+
+# Metode
 
 ```{r}
 #| echo: false
