@@ -53,10 +53,34 @@ For å vurdere reliabilitet ble følgende statistiske analyser utført: deskript
 #| warning: false
 
 library(tidyverse)
+library(gt)
+library(irr)
 
-descriptives <- read.csv("Wingate_data.csv")
+descriptives <- read_csv("Wingate_data.csv")
 
-descriptives
+modified_descriptives <- descriptives %>% 
+  select(FP, Test, Wsnitt) %>% 
+  group_by(FP) %>% 
+  summarise(Gjennomsnitt = mean(Wsnitt),
+            SD = sd(Wsnitt))
+
+descriptive_table <- modified_descriptives %>% 
+  gt() %>% 
+  tab_header(
+    title = "Gjennomsnittlig Watt fra økter",
+    subtitle = "Presentert med gjennomsnitt og standard avvik (SD)"
+  ) %>% 
+  fmt_number(
+    columns = everything(),
+    decimals = 0
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+
+descriptive_table
+
 
 ```
 

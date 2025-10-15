@@ -11,7 +11,6 @@ modified_descriptives <- descriptives %>%
   summarise(Gjennomsnitt = mean(Wsnitt),
             SD = sd(Wsnitt))
 
-modified_descriptives
 
 descriptive_table <- modified_descriptives %>% 
   gt() %>% 
