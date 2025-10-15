@@ -9,7 +9,7 @@ csl: vancouver.csl
 
 # 1. Introduksjon
 
-Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratorier brukes typisk Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
+Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratoriet på fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
 
 Formålet med denne studien var å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. Studien ønsket å besvare problemstillingen: "Er Tacx-syklene på 'ghetto gymmen' reliable for 15-sekunders Wingate-tester?" Gjennom gjentatte tester over fire testdager med to testpersoner, ble reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.
 
@@ -39,11 +39,11 @@ Følgende parametre ble registrert for hver Wingate-test: gjennomsnittseffekt (W
 
 ## 2.6 Sikkerhetshensyn
 
-Testene ble gjennomført med strengt fokus på sikkerhet. Testpersonene gjennomgikk den standardiserte oppvarmingsprotokollen før hver test. Forskerne overvåket testpersonene kontinuerlig under testing for å identifisere tegn til overanstrengelse. Nødvendig utstyr og prosedyrer for førstehjelp var tilgjengelig under alle testøkter.
+Testene ble gjennomført med strengt fokus på sikkerhet. Testpersonene gjennomgikk den standardiserte oppvarmingsprotokollen før hver test. Testleder overvåket testpersonene kontinuerlig under testing for å identifisere tegn til overanstrengelse. Nødvendig utstyr og prosedyrer for førstehjelp var tilgjengelig under alle testøkter.
 
 ## 2.7 Statistiske analyser
 
-For å vurdere reliabilitet ble følgende statistiske analyser utført: deskriptiv statistikk (gjennomsnitt, standardavvik), variasjonskoeffisient (CV) for intra-individuell variasjon, Intraclass Correlation Coefficient (ICC) for test-retest reliabilitet og ANOVA for visualisering av måleavvik og for å vurdere systematiske endringer over tid. Alle analyser ble utført ved bruk av R versjon 4.3.1.
+For å vurdere reliabilitet ble følgende statistiske analyser utført: deskriptiv statistikk (gjennomsnitt, standardavvik) og Intraclass Correlation Coefficient (ICC) for test-retest reliabilitet og det ble laget en figur for visualisering av måleavvik og for å vurdere systematiske endringer over tid. Alle analyser ble utført ved bruk av R versjon 4.3.1.
 
 # 3. Resultater
 
