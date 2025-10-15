@@ -110,7 +110,7 @@ ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = facto
 
 Hovedfunnene i denne studien er at Tacx-sykkelen viste svært høy reliabilitet for 15-sekunders Wingate-tester, med en ICC på 0,98. Dette tyder på at målingene var svært stabile mellom testene, og at variasjonen i resultatene i hovedsak skyldtes deltakerne og ikke selve måleinstrumentet.
 
-Metodiske betraktninger:
+Tidiligere studier har vist at Tacx-syklene er et reliabelt apparat i submaksimal testing, noe denne studien bekrefter er gjeldene også ved maksimal testing. @2025
 
 Til tross for en tilvenningstest i forkant var testpersonenes fysiologiske dag-til-dag-variasjon trolig den største kilden til usikkerhet i reliabilitetsmålingene. Deltakerne var lite sykkeltrente, og både dagsform og teknisk utførelse varierte. Dette førte til et større prestasjonsfall mellom test 1 og 2 enn forventet, noe som sannsynligvis bidro til å maskere Tacx-syklenes reelle reliabilitet. Fremtidige studier bør inkludere bedre sykkeltrente deltakere for å redusere fysiologisk variasjon.
 
