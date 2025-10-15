@@ -48,13 +48,15 @@ icc_result <- icc(
 
 print(icc_result)
 
+print(descriptives)
 
-ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP)) +
+ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = factor(FP))) +
   geom_line(alpha = 0.5) +
-  geom_point() +
+  geom_point(size = 2) +
   theme_minimal() +
   labs(
     x = "Test",
     y = "Gjennomsnittlig W",
-    title = "Repeterte gjennomsnittlige W-målinger per deltaker"
+    title = "Repeterte gjennomsnittlige W-målinger per deltaker",
+    color = "Deltaker"
   )
