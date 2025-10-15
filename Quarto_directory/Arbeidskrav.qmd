@@ -62,8 +62,10 @@ descriptives
 
 # Diskusjon 4
 
-Hovedfunnene i denne studien er...
+Hovedfunnene i denne studien er
 
 Metodiske betraktninger:
 
-Til tross for tilvenningstest før testperioden er trolig testpersonene det største usikkerhetsmomentet ved målinegene av Tacx-syklenes reliabilitet. Deres opplevelde dagsform varierte fra dag til dag, samt et større fall i prestasjon fra test 1 til 2 samme dag enn antatt på forhånd. Disse variasjonene kan ha vært med på å maskere den reelle reliabiliteten til Tacx-syklene. Til fremtidige studier anbefales bedre sykkeltrente deltagere som trolig vil ha mindre fysiologisk dag til dag variasjon. VALIDITET
+Til tross for en tilvenningstest i forkant var testpersonenes fysiologiske dag-til-dag-variasjon trolig den største kilden til usikkerhet i reliabilitetsmålingene. Deltakerne var lite sykkeltrente, og både dagsform og teknisk utførelse varierte. Dette førte til et større prestasjonsfall mellom test 1 og 2 enn forventet, noe som sannsynligvis bidro til å maskere Tacx-syklenes reelle reliabilitet. Fremtidige studier bør inkludere bedre sykkeltrente deltakere for å redusere fysiologisk variasjon.
+
+Planen var opprinnelig å teste to Tacx-sykler mot hverandre for å vurdere validitet. Dette var ikke mulig på grunn av tekniske og sikkerhetsmessige begrensninger, da syklene begynte å bli ødelagte og fungerte dårlig ved høy watt. Dermed er resultatene begrenset til den ene sykkelen som ble brukt. Dette understreker hvor viktig både treningsstatus og måleutstyr er for reliabilitets- og validitetsvurderinger.
