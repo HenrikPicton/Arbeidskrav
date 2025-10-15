@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="Arbeidskrav_files/libs/clipboard/clipboard.min.js"></script>
@@ -35,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="Arbeidskrav_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Arbeidskrav_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Arbeidskrav_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Arbeidskrav_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Arbeidskrav_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -71,44 +90,543 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<section id="introduksjon" class="level1">
+<h1>1. Introduksjon</h1>
+<p>Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratoriet på fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.</p>
+<p>Formålet med denne studien var å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. Studien ønsket å besvare problemstillingen: “Er Tacx-syklene på ‘ghetto gymmen’ reliable for 15-sekunders Wingate-tester?” Gjennom gjentatte tester over fire testdager med to testpersoner, ble reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.</p>
 </section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="metode" class="level1">
+<h1>2. Metode</h1>
+<section id="innledning" class="level2">
+<h2 class="anchored" data-anchor-id="innledning">2.1 Innledning</h2>
+<p>For å besvare problemstillingen om reliabiliteten til Tacx-syklene for 15-sekunders Wingate-testing, ble det gjennomført en serie med gjentatte tester under strengt kontrollerte betingelser. Denne delen beskriver utstyr, testprotokoll og analysemetoder som ble benyttet for å vurdere målekonsistens over tid.</p>
+</section>
+<section id="testutstyr-og-oppsett" class="level2">
+<h2 class="anchored" data-anchor-id="testutstyr-og-oppsett">2.2 Testutstyr og oppsett</h2>
+<p>Studien ble gjennomført ved bruk av Tacx-syklene tilgjengelig i “ghetto gymmen” ved Sørhove Universitet Lillehammer. Syklene ble konfigurert ved hjelp av Garmin-applikasjonen, hvor et spesifikt program for 15-sekunders Wingate-test ble utviklet og implementert for å sikre standardisert datainnsamling. Alle tester ble gjennomført med girinnstilling 34/12.</p>
+</section>
+<section id="testprotokoll" class="level2">
+<h2 class="anchored" data-anchor-id="testprotokoll">2.3 Testprotokoll</h2>
+<p>En standardisert 15-sekunders Wingate-testprotokoll ble fulgt for alle testøkter. Studien inkluderte først en tilvenningstest for å validere testprosedyren, etterfulgt av testperioden med 4 testdager. Hver testdag inkluderte 2 Wingate-tester per testperson. For å sikre maksimal reliabilitet ble alle tester ledet av samme testleder med standarisert ordbruk, og identisk startposisjon på pedalene ble opprettholdt for hver test.</p>
+<p>Oppvarmingsprotokollen var standardisert og omfattet: 5 minutter ved Borg 11, 3 minutter ved Borg 15, 30 sekunder pause (0 watt), 30 sekunder ved Borg 17, 30 sekunder pause (0 watt), 30 sekunder ved Borg 17, og 5 minutter aktiv gjenoppretting (50-100 watt). Etter første Wingate-test fulgte 10 minutter aktiv gjenoppretting (50-100 watt) og 10 sekunder pause (0 watt) før andre Wingate-test ble utført under identiske betingelser.</p>
+</section>
+<section id="testpersoner" class="level2">
+<h2 class="anchored" data-anchor-id="testpersoner">2.4 Testpersoner</h2>
+<p>To testpersoner deltok i studien. Begge testpersonene hadde en treningsbakgrunn som inkluderte gjennomsnittlig en sykkeløkt per uke i løpet av de to månedene før testperioden. I tillegg var testpersonene godt styrketrente med gjennomsnittlig to spesifikke benøkter per uke. Testpersonene var friske og aktive, uten kjente helseplager som kunne påvirke testresultatene.</p>
+</section>
+<section id="datainnsamling" class="level2">
+<h2 class="anchored" data-anchor-id="datainnsamling">2.5 Datainnsamling</h2>
+<p>Følgende parametre ble registrert for hver Wingate-test: gjennomsnittseffekt (W) over 15 sekunder. Data ble samlet inn gjennom Garmin-applikasjonen og eksportert for videre analyse. Totalt ble 16 Wingate-tester gjennomført (4 testdager × 2 tester × 2 personer).</p>
+</section>
+<section id="sikkerhetshensyn" class="level2">
+<h2 class="anchored" data-anchor-id="sikkerhetshensyn">2.6 Sikkerhetshensyn</h2>
+<p>Testene ble gjennomført med strengt fokus på sikkerhet. Testpersonene gjennomgikk den standardiserte oppvarmingsprotokollen før hver test. Testleder overvåket testpersonene kontinuerlig under testing for å identifisere tegn til overanstrengelse. Nødvendig utstyr og prosedyrer for førstehjelp var tilgjengelig under alle testøkter.</p>
+</section>
+<section id="statistiske-analyser" class="level2">
+<h2 class="anchored" data-anchor-id="statistiske-analyser">2.7 Statistiske analyser</h2>
+<p>For å vurdere reliabilitet ble følgende statistiske analyser utført: deskriptiv statistikk (gjennomsnitt, standardavvik) og Intraclass Correlation Coefficient (ICC) for test-retest reliabilitet og det ble laget en figur for visualisering av måleavvik og for å vurdere systematiske endringer over tid. Alle analyser ble utført ved bruk av R versjon 4.3.1.</p>
+</section>
+</section>
+<section id="resultater" class="level1">
+<h1>3. Resultater</h1>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>   FP Test Wsnitt Wmaks Kommentar
-1   1    1    796  1070        NA
-2   1    2    708   993        NA
-3   1    3    762  1077        NA
-4   1    4    760  1056        NA
-5   1    5    775  1100        NA
-6   1    6    688   985        NA
-7   1    7    787  1192        NA
-8   1    8    756  1043        NA
-9   2    1    933  1296        NA
-10  2    2    908  1131        NA
-11  2    3    856  1299        NA
-12  2    4    908  1236        NA
-13  2    5    930  1295        NA
-14  2    6    828  1195        NA
-15  2    7    815  1172        NA
-16  2    8    832  1168        NA</code></pre>
+<div class="cell-output-display">
+<div id="kclapkcrcp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kclapkcrcp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#kclapkcrcp thead, #kclapkcrcp tbody, #kclapkcrcp tfoot, #kclapkcrcp tr, #kclapkcrcp td, #kclapkcrcp th {
+  border-style: none;
+}
+
+#kclapkcrcp p {
+  margin: 0;
+  padding: 0;
+}
+
+#kclapkcrcp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#kclapkcrcp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kclapkcrcp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kclapkcrcp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kclapkcrcp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kclapkcrcp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kclapkcrcp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kclapkcrcp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kclapkcrcp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kclapkcrcp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#kclapkcrcp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kclapkcrcp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kclapkcrcp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kclapkcrcp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kclapkcrcp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kclapkcrcp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kclapkcrcp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#kclapkcrcp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kclapkcrcp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kclapkcrcp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kclapkcrcp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kclapkcrcp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kclapkcrcp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kclapkcrcp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kclapkcrcp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kclapkcrcp .gt_left {
+  text-align: left;
+}
+
+#kclapkcrcp .gt_center {
+  text-align: center;
+}
+
+#kclapkcrcp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kclapkcrcp .gt_font_normal {
+  font-weight: normal;
+}
+
+#kclapkcrcp .gt_font_bold {
+  font-weight: bold;
+}
+
+#kclapkcrcp .gt_font_italic {
+  font-style: italic;
+}
+
+#kclapkcrcp .gt_super {
+  font-size: 65%;
+}
+
+#kclapkcrcp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#kclapkcrcp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kclapkcrcp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#kclapkcrcp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#kclapkcrcp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#kclapkcrcp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#kclapkcrcp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#kclapkcrcp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#kclapkcrcp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="3" class="gt_heading gt_title gt_font_normal">Gjennomsnittlig Watt fra økter</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Presentert med gjennomsnitt og standard avvik (SD)</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="FP" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">FP</th>
+<th id="Gjennomsnitt" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Gjennomsnitt</th>
+<th id="SD" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">SD</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="FP">1</td>
+<td class="gt_row gt_right" headers="Gjennomsnitt">754</td>
+<td class="gt_row gt_right" headers="SD">38</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="FP">2</td>
+<td class="gt_row gt_right" headers="Gjennomsnitt">876</td>
+<td class="gt_row gt_right" headers="SD">49</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
 </div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+</section>
+<section id="diskusjon-4" class="level1">
+<h1>Diskusjon 4</h1>
+<p>Hovedfunnene i denne studien er at Tacx-sykkelen viste svært høy reliabilitet for 15-sekunders Wingate-tester, med en ICC på 0,98. Dette tyder på at målingene var svært stabile mellom testene, og at variasjonen i resultatene i hovedsak skyldtes deltakerne og ikke selve måleinstrumentet.</p>
+<p>Tidiligere studier har vist at Tacx-syklene er et reliabelt apparat i submaksimal testing, noe denne studien bekrefter er gjeldene også ved maksimal testing. <span class="citation" data-cites="2025">(<a href="#ref-2025" role="doc-biblioref">1</a>)</span></p>
+<p>Til tross for en tilvenningstest i forkant var testpersonenes fysiologiske dag-til-dag-variasjon trolig den største kilden til usikkerhet i reliabilitetsmålingene. Deltakerne var lite sykkeltrente, og både dagsform og teknisk utførelse varierte. Dette førte til et større prestasjonsfall mellom test 1 og 2 enn forventet, noe som sannsynligvis bidro til å maskere Tacx-syklenes reelle reliabilitet. Fremtidige studier bør inkludere bedre sykkeltrente deltakere for å redusere fysiologisk variasjon.</p>
+<p>Planen var opprinnelig å teste to Tacx-sykler mot hverandre for å vurdere validitet. Dette var ikke mulig på grunn av tekniske og sikkerhetsmessige begrensninger, da syklene begynte å bli ødelagte og fungerte dårlig ved høy watt. Dermed er resultatene begrenset til den ene sykkelen som ble brukt. Dette understreker hvor viktig både treningsstatus og måleutstyr er for reliabilitets- og validitetsvurderinger.</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><a href="https://doi.org/10.3390/jfmk9030138">(<span>PDF</span>) <span>The Accuracy</span> and <span>Reliability</span> of the <span>Power Measurements</span> of the <span>TACX Neo 2T Smart Trainer</span> and <span>Its Agreement</span> against the <span>Garmin Vector</span> 3 <span>Pedals</span></a>. ResearchGate. 2025 Oct; </div>
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
