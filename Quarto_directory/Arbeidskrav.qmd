@@ -53,16 +53,40 @@ For å vurdere reliabilitet ble følgende statistiske analyser utført: deskript
 #| warning: false
 
 library(tidyverse)
+library(gt)
+library(irr)
 
-descriptives <- read.csv("Wingate_data.csv")
+descriptives <- read_csv("Wingate_data.csv")
 
-descriptives
+modified_descriptives <- descriptives %>% 
+  select(FP, Test, Wsnitt) %>% 
+  group_by(FP) %>% 
+  summarise(Gjennomsnitt = mean(Wsnitt),
+            SD = sd(Wsnitt))
+
+descriptive_table <- modified_descriptives %>% 
+  gt() %>% 
+  tab_header(
+    title = "Gjennomsnittlig Watt fra økter",
+    subtitle = "Presentert med gjennomsnitt og standard avvik (SD)"
+  ) %>% 
+  fmt_number(
+    columns = everything(),
+    decimals = 0
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+
+descriptive_table
+
 
 ```
 
 # Diskusjon 4
 
-Den høye ICC-verdien (0.976) er i tråd med forventningene gitt det standardiserte testoppsettet og bruken av ett instrument. Dette tyder på at måleinstrumentet i seg selv har høy teknisk reliabilitet, til tross for noe fysiologisk variasjon hos deltakerne
+Hovedfunnene i denne studien er at Tacx-sykkelen viste svært høy reliabilitet for 15-sekunders Wingate-tester, med en ICC på 0,98. Dette tyder på at målingene var svært stabile mellom testene, og at variasjonen i resultatene i hovedsak skyldtes deltakerne og ikke selve måleinstrumentet.
 
 Metodiske betraktninger:
 
