@@ -51,6 +51,7 @@ For å vurdere reliabilitet ble følgende statistiske analyser utført: deskript
 #| echo: false
 #| error: false
 #| warning: false
+#| fig-align: left
 
 library(tidyverse)
 library(gt)
@@ -61,14 +62,14 @@ descriptives <- read_csv("Wingate_data.csv")
 modified_descriptives <- descriptives %>% 
   select(FP, Test, Wsnitt) %>% 
   group_by(FP) %>% 
-  summarise(Gjennomsnitt = mean(Wsnitt),
+  summarise(Watt = mean(Wsnitt),
             SD = sd(Wsnitt))
 
 descriptive_table <- modified_descriptives %>% 
   gt() %>% 
   tab_header(
     title = "Gjennomsnittlig Watt fra økter",
-    subtitle = "Presentert med gjennomsnitt og standard avvik (SD)"
+    subtitle = "Presentert med gjennomsnitt og standardavvik (SD)"
   ) %>% 
   fmt_number(
     columns = everything(),
@@ -77,11 +78,32 @@ descriptive_table <- modified_descriptives %>%
   tab_style(
     style = cell_text(weight = "bold"),
     locations = cells_column_labels(everything())
+  ) %>% 
+  tab_options(
+    table.align = "left"
   )
 
 descriptive_table
 
+```
 
+```{r}
+#| echo: false
+#| error: false
+#| warning: false
+
+ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = factor(FP))) +
+  geom_line(alpha = 0.5) +
+  geom_point(size = 2) +
+  theme_minimal() +
+  labs(
+    x = "Test",
+    y = "Gjennomsnittlig Watt",
+    title = "Repeterte gjennomsnittlige Wattmålinger per deltaker",
+    color = "Deltaker") +
+  annotate("text", label = paste0("ICC = 0.976  P <.001"),
+           x = 3.5, y = 950, size = 4, hjust = 0) +
+  theme(plot.title = element_text(face = "bold", size = 16))
 ```
 
 # Diskusjon 4
