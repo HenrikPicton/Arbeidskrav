@@ -62,7 +62,7 @@ descriptives
 
 # Diskusjon 4
 
-Den høye ICC-verdien (0.976) er i tråd med forventningene gitt det standardiserte testoppsettet og bruken av ett instrument. Dette tyder på at måleinstrumentet i seg selv har høy teknisk reliabilitet, til tross for noe fysiologisk variasjon hos deltakerne
+Hovedfunnene i denne studien er at Tacx-sykkelen viste svært høy reliabilitet for 15-sekunders Wingate-tester, med en ICC på 0,98. Dette tyder på at målingene var svært stabile mellom testene, og at variasjonen i resultatene i hovedsak skyldtes deltakerne og ikke selve måleinstrumentet.
 
 Metodiske betraktninger:
 
