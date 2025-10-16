@@ -9,9 +9,9 @@ csl: vancouver.csl
 
 # 1. Introduksjon
 
-Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratoriet på fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
+Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratoriet i fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
 
-Formålet med denne studien var å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. Studien ønsket å besvare problemstillingen: "Er Tacx-syklene på 'ghetto gymmen' reliable for 15-sekunders Wingate-tester?" Gjennom gjentatte tester over fire testdager med to testpersoner, ble reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.
+Formålet med denne studien er å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. Studien ønsker å besvare problemstillingen: "Er Tacx-syklene på 'ghetto gymmen' reliable for 15-sekunders Wingate-tester?" Gjennom gjentatte tester over fire testdager med to testpersoner, blir reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.
 
 # 2. Metode
 
@@ -51,6 +51,7 @@ For å vurdere reliabilitet ble følgende statistiske analyser utført: deskript
 #| echo: false
 #| error: false
 #| warning: false
+#| fig-align: left
 
 library(tidyverse)
 library(gt)
@@ -61,14 +62,14 @@ descriptives <- read_csv("Wingate_data.csv")
 modified_descriptives <- descriptives %>% 
   select(FP, Test, Wsnitt) %>% 
   group_by(FP) %>% 
-  summarise(Gjennomsnitt = mean(Wsnitt),
+  summarise(Watt = mean(Wsnitt),
             SD = sd(Wsnitt))
 
 descriptive_table <- modified_descriptives %>% 
   gt() %>% 
   tab_header(
     title = "Gjennomsnittlig Watt fra økter",
-    subtitle = "Presentert med gjennomsnitt og standard avvik (SD)"
+    subtitle = "Presentert med gjennomsnitt og standardavvik (SD)"
   ) %>% 
   fmt_number(
     columns = everything(),
@@ -77,18 +78,39 @@ descriptive_table <- modified_descriptives %>%
   tab_style(
     style = cell_text(weight = "bold"),
     locations = cells_column_labels(everything())
+  ) %>% 
+  tab_options(
+    table.align = "left"
   )
 
 descriptive_table
 
-
 ```
 
-# Diskusjon 4
+```{r}
+#| echo: false
+#| error: false
+#| warning: false
+
+ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = factor(FP))) +
+  geom_line(alpha = 0.5) +
+  geom_point(size = 2) +
+  theme_minimal() +
+  labs(
+    x = "Test",
+    y = "Gjennomsnittlig Watt",
+    title = "Repeterte gjennomsnittlige Wattmålinger per deltaker",
+    color = "Deltaker") +
+  annotate("text", label = paste0("ICC = 0.976  P <.001"),
+           x = 3.5, y = 950, size = 4, hjust = 0) +
+  theme(plot.title = element_text(face = "bold", size = 16))
+```
+
+# 4. Diskusjon
 
 Hovedfunnene i denne studien er at Tacx-sykkelen viste svært høy reliabilitet for 15-sekunders Wingate-tester, med en ICC på 0,98. Dette tyder på at målingene var svært stabile mellom testene, og at variasjonen i resultatene i hovedsak skyldtes deltakerne og ikke selve måleinstrumentet.
 
-Metodiske betraktninger:
+Tidiligere studier har vist at Tacx-syklene er et reliabelt apparat i submaksimal testing, noe denne studien bekrefter er gjeldene også ved maksimal testing. @2025
 
 Til tross for en tilvenningstest i forkant var testpersonenes fysiologiske dag-til-dag-variasjon trolig den største kilden til usikkerhet i reliabilitetsmålingene. Deltakerne var lite sykkeltrente, og både dagsform og teknisk utførelse varierte. Dette førte til et større prestasjonsfall mellom test 1 og 2 enn forventet, noe som sannsynligvis bidro til å maskere Tacx-syklenes reelle reliabilitet. Fremtidige studier bør inkludere bedre sykkeltrente deltakere for å redusere fysiologisk variasjon.
 
