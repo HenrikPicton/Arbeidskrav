@@ -9,9 +9,9 @@ csl: vancouver.csl
 
 # 1. Introduksjon
 
-Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring. På laboratoriet i fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
+Wingate-testen er en godt etablert protokoll for å måle anaerob kapasitet, men dens reliabilitet er avhengig av presis utstyrskalibrering og standardisert gjennomføring @2012, @2025a, @2022. På laboratoriet i fys-labben brukes Lode-sykler til forskningsprosjekter, mens Tacx-syklene som også finnes til disposisjon, hovedsakelig benyttes til treningsintervensjoner. Disse Tacx-syklene er ennå ikke vurdert for bruk i fysiologiske tester.
 
-Formålet med denne studien er å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. Studien ønsker å besvare problemstillingen: "Er Tacx-syklene på 'ghetto gymmen' reliable for 15-sekunders Wingate-tester?" Gjennom gjentatte tester over fire testdager med to testpersoner, blir reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.
+Formålet med denne studien er å vurdere reliabiliteten til Tacx-syklene for gjennomføring av 15-sekunders Wingate-tester. En tidligere studie har sett at Tacx sykkelen er reliabel i submaksimal testing @2025. Vi ønsker å undersøke reliabiliteten under maksimal testing for å dekke kunnskapshull gjeldene Tacx-syklenes bruksområde. Studien ønsker å besvare problemstillingen: "Er Tacx-syklene på 'ghetto gymmen' reliable for 15-sekunders Wingate-tester?" Gjennom gjentatte tester over fire testdager med to testpersoner, blir reliabiliteten evaluert for å avgjøre om syklene er egnet til fysiologisk testing.
 
 # 2. Metode
 
@@ -21,11 +21,13 @@ For å besvare problemstillingen om reliabiliteten til Tacx-syklene for 15-sekun
 
 ## 2.2 Testutstyr og oppsett
 
-Studien ble gjennomført ved bruk av Tacx-syklene tilgjengelig i "ghetto gymmen" ved Sørhove Universitet Lillehammer. Syklene ble konfigurert ved hjelp av Garmin-applikasjonen, hvor et spesifikt program for 15-sekunders Wingate-test ble utviklet og implementert for å sikre standardisert datainnsamling. Alle tester ble gjennomført med girinnstilling 34/12.
+Studien ble gjennomført ved bruk av Tacx-syklene tilgjengelig i "ghetto gymmen" ved Universitetet i Lillehammer. Syklene ble konfigurert ved hjelp av Garmin-applikasjonen, hvor et spesifikt program for 15-sekunders Wingate-test ble utviklet og implementert for å sikre standardisert datainnsamling. Alle tester ble gjennomført med girinnstilling 34/12.
 
 ## 2.3 Testprotokoll
 
-En standardisert 15-sekunders Wingate-testprotokoll ble fulgt for alle testøkter. Studien inkluderte først en tilvenningstest for å validere testprosedyren, etterfulgt av testperioden med 4 testdager. Hver testdag inkluderte 2 Wingate-tester per testperson. For å sikre maksimal reliabilitet ble alle tester ledet av samme testleder med standarisert ordbruk, og identisk startposisjon på pedalene ble opprettholdt for hver test.
+En standardisert 15-sekunders Wingate-testprotokoll ble fulgt for alle testøkter. Studien inkluderte først en tilvenningstest for å validere testprosedyren, etterfulgt av testperioden med 4 testdager. Hver testdag inkluderte to Wingate-tester per testperson. For å sikre maksimal reliabilitet ble alle tester ledet av samme testleder med sterk verbal oppmuntring, og identisk startposisjon på pedalene ble opprettholdt for hver test.
+
+For å kontrollere for ytterligere variabler ble følgende standardiserte rutiner implementert: siste måltid ble inntatt 2 timer før hver test, koffeininntaket var standardisert før hver testøkt, testene ble gjennomført på omtrent samme tid på døgnet (±1 time), det ble ikke gjennomført benøkt i uken testene ble avholdt, og siste benøkt fant sted 48 timer før første testdag.
 
 Oppvarmingsprotokollen var standardisert og omfattet: 5 minutter ved Borg 11, 3 minutter ved Borg 15, 30 sekunder pause (0 watt), 30 sekunder ved Borg 17, 30 sekunder pause (0 watt), 30 sekunder ved Borg 17, og 5 minutter aktiv gjenoppretting (50-100 watt). Etter første Wingate-test fulgte 10 minutter aktiv gjenoppretting (50-100 watt) og 10 sekunder pause (0 watt) før andre Wingate-test ble utført under identiske betingelser.
 
@@ -43,7 +45,7 @@ Testene ble gjennomført med strengt fokus på sikkerhet. Testpersonene gjennomg
 
 ## 2.7 Statistiske analyser
 
-For å vurdere reliabilitet ble følgende statistiske analyser utført: deskriptiv statistikk (gjennomsnitt, standardavvik) og Intraclass Correlation Coefficient (ICC) for test-retest reliabilitet og det ble laget en figur for visualisering av måleavvik og for å vurdere systematiske endringer over tid. Alle analyser ble utført ved bruk av R versjon 4.3.1.
+For å vurdere reliabilitet ble følgende statistiske analyser utført: deskriptiv statistikk (gjennomsnitt, standardavvik) og Intraclass Correlation Coefficient (ICC). ICC analyse er vist å være en god statistik analyse for reliabilitetstesting @Mehta2018ICC. Det ble laget en figur for visualisering av måleavvik og for å vurdere systematiske endringer over tid. Alle analyser ble utført ved bruk av R versjon 4.3.1.
 
 # 3. Resultater
 
