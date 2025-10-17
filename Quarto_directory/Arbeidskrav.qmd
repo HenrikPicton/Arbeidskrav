@@ -70,7 +70,7 @@ modified_descriptives <- descriptives %>%
 descriptive_table <- modified_descriptives %>% 
   gt() %>% 
   tab_header(
-    title = "Gjennomsnittlig Watt fra økter",
+    title = "Gjennomsnittlig Watt fra tester",
     subtitle = "Presentert med gjennomsnitt og standardavvik (SD)"
   ) %>% 
   fmt_number(
