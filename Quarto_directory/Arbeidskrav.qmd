@@ -1,7 +1,9 @@
 ---
-title: "Arbeidskrav Statistikk"
+title: "Arbeidskrav 1 og 2 Statistikk"
 author: "Gard, Henrik og Sebastian"
-format: html
+format: pdf
+tbl-pos: "H"
+fig-pos: "H"
 editor: visual
 bibliography: references_arbeidskrav.bib
 csl: vancouver.csl
@@ -82,9 +84,13 @@ descriptive_table <- modified_descriptives %>%
     locations = cells_column_labels(everything())
   ) %>% 
   tab_options(
-    table.align = "left"
+    table.align = "left",
+    column_labels.border.bottom.width = px(2),
+    column_labels.border.bottom.color = "black",
+    table.border.top.style = "solid",
+    table.border.bottom.style = "solid"
   )
-
+  
 descriptive_table
 
 ```
@@ -93,6 +99,7 @@ descriptive_table
 #| echo: false
 #| error: false
 #| warning: false
+#| fig-pos: "H"
 
 ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = factor(FP))) +
   geom_line(alpha = 0.5) +
@@ -106,6 +113,7 @@ ggplot(descriptives, aes(x = factor(Test), y = Wsnitt, group = FP, color = facto
   annotate("text", label = paste0("ICC = 0.976  P <.001"),
            x = 3.5, y = 950, size = 4, hjust = 0) +
   theme(plot.title = element_text(face = "bold", size = 16))
+
 ```
 
 # 4. Diskusjon
